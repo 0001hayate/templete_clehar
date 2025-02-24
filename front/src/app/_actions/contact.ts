@@ -5,6 +5,7 @@ function validateEmail(email: string) {
   return pattern.test(email);
 }
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export async function createContactData(_prevState: any, formData: FormData) {
   // formのname属性ごとにformData.get()で値を取り出すことができる
   const rawFormData = {
